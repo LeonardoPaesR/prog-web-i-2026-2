@@ -16,7 +16,7 @@
             <p><small>Tema: Ganhadores de melhor filme no Oscar (2020–2024)</small></p>
         </div>
 
-        <!-- Menu de Navegação -->
+        <!-- Menu de Navegação com âncora para o novo formulário temático -->
         <nav id="menu-principal">
             <ul>
                 <li><a href="#sobre" class="link-nav">Sobre mim</a></li>
@@ -161,7 +161,7 @@
             <a href="mailto:leonardo.santos@estudante.ifgoiano.edu.br">leonardo.santos@estudante.ifgoiano.edu.br</a>.
         </p>
 
-        <!-- Formulário de Contato Simples -->
+        <!-- Formulário de Contato -->
         <form id="form-contato" action="#" method="POST">
             <fieldset>
                 <legend>Envie uma mensagem</legend>
@@ -190,19 +190,19 @@
 
     <hr>
 
-    <!-- Exercício 2, 3 e 4: Formulário Temático com Múltiplos Inputs, Pattern e Validação Nativa -->
+    <!-- Exercício 2, 3 e 4: Formulário Temático do Oscar com Múltiplos Inputs e Validação -->
     <section id="avaliacao-oscar" class="secao">
         <h2>Avaliação e Cadastro de Cinéfilo - Oscar</h2>
         
         <form id="form-tematico" action="#" method="POST">
             
-            <!-- Grupo 1: Dados do Participante -->
+            <!-- Fieldset 1: Dados do Participante -->
             <fieldset>
                 <legend>Dados do Participante</legend>
 
                 <p>
                     <label for="nome-cinefilo">Nome do Cinéfilo:</label><br>
-                    <input type="text" id="nome-cinefilo" name="nome_cinefilo" placeholder="Seu nome" required minlength="3" maxlength="60">
+                    <input type="text" id="nome-cinefilo" name="nome_cinefilo" placeholder="Seu nome completo" required minlength="3" maxlength="60">
                 </p>
 
                 <p>
@@ -224,7 +224,7 @@
 
             <br>
 
-            <!-- Grupo 2: Votação e Preferências Cinematográficas -->
+            <!-- Fieldset 2: Votação e Preferências Cinematográficas -->
             <fieldset>
                 <legend>Preferências e Votação de Filmes</legend>
 
@@ -242,11 +242,11 @@
                 </p>
 
                 <p>
-                    <label for="nota-edicao">Nota para as últimas edições da premiação (1 a 10):</label><br>
+                    <label for="nota-edicao">Nota para a relevância das premiações (1 a 10):</label><br>
                     <input type="number" id="nota-edicao" name="nota_edicao" min="1" max="10" placeholder="Ex: 8" required>
                 </p>
 
-                <!-- Radio buttons com o mesmo name -->
+                <!-- Grupo de radio buttons -->
                 <p>Você costuma assistir à cerimônia ao vivo?</p>
                 <p>
                     <input type="radio" id="assiste-sim" name="assiste_ao_vivo" value="sim" required>
@@ -259,7 +259,7 @@
                     <label for="assiste-nao">Não assisto, apenas leio o resultado</label>
                 </p>
 
-                <!-- Checkboxes -->
+                <!-- Grupo de checkboxes -->
                 <p>Onde você costuma acompanhar e avaliar cinema? (Selecione todos que se aplicam):</p>
                 <p>
                     <input type="checkbox" id="plataforma-letterboxd" name="plataformas" value="letterboxd">
